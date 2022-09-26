@@ -77,9 +77,9 @@ A value that represents the Resource Record (RR)<a href="/windows/desktop/DNS/dn
 
 A value that contains a bitmap of <a href="/windows/desktop/DNS/dns-constants">DNS Query  Options</a> to use in the DNS query. Options can be combined and all options override <b>DNS_QUERY_STANDARD</b>.
 
-### -param pExtra [in, out, optional]
+### -param aipServers [in, optional]
 
-This parameter is reserved for future use and must be set to <b>NULL</b>.
+A value that contains a pointer to an <a href="/windows/win32/api/windns/ns-windns-ip4_array">IP4 Array</a> containining the IP addresses of the DNS servers to which the query will be sent. If this is <b>NULL</b>, default DNS servers for the local computer are used.  
 
 ### -param ppQueryResults [out, optional]
 
